@@ -169,8 +169,8 @@ floatingObject('.floating3', 1.5, 20)
       triggerHook: .8 // 화면의 80% 지점에서 보여짐 여부 감시
     })
     .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
-    .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
+    .addTo(new ScrollMagic.Controller()) // 컨트롤러에 장면을 할당(필수!)
  })
 
- const thisYear = document.querySelector('.this-year');
+ const thisYear = document.querySelector('.this-year')
  thisYear.textContent = new Date().getFullYear()
